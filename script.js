@@ -10,4 +10,4 @@ function validatePassword(){
 }
 
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+confirm_password.onchange = validatePassword;
