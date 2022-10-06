@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin-Form</title>
     <link rel="stylesheet" href="./app.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="image-container">
@@ -17,10 +18,43 @@
         <div class="form-heading"> 
             <p>This is not a real online service!</p> 
             <p>Your Watch, Your personality. Choose Your Timepiece to express Yourself.</p> 
-            <p>Let's do this!</p> 
+            <p>Sign Up now to find Your Watch!</p> 
         </div>
-        <div class="form"></div>
-        <div class="signUp"></div>
+        <form action="#">
+            <div class="form-body">
+                <div class="col1">
+                    <div class="form-node">
+                        <label for="firstname">*First Name:</label>
+                        <input type="text" id="firstname" required>
+                    </div>
+                    <div class="form-node">
+                        <label for="email">*Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-node">
+                        <label for="password">*Password:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="form-node">
+                        <label for="lastname">*Last Name:</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                    <div class="form-node">
+                        <label for="phoneNum">Phone Number:</label>
+                        <input type="text" id="phoneNum">
+                    </div>
+                    <div class="form-node">
+                        <label for="confirm_password">*Confirm Password:</label>
+                        <input type="password" id="confirm_password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="signUp">
+                <button type="submit" class="submitBtn">Sign Up!</button>
+            </div> 
+        </form>
     </div>
 </body>
 </html>
